@@ -1,9 +1,9 @@
-# Generated: 2026-05-29 08:18 UTC
+# Generated: 2026-05-29 08:21 UTC
 proxies:
-- name: '[US] 217.12.194.164:40441 44.9M 1ms'
+- name: '[JP] 131.147.158.37:1831 934.2M 1ms'
   type: openvpn
-  server: 217.12.194.164
-  port: 40441
+  server: 131.147.158.37
+  port: 1831
   proto: tcp
   ca: "-----BEGIN CERTIFICATE-----\r\nMIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw\r\
     \nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\r\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4\r\
@@ -24,10 +24,10 @@ proxies:
   cipher: AES-256-GCM
   auth: SHA512
   tls: true
-- name: '[JP] 182.165.181.74:1403 713.0M 1ms'
+- name: '[JP] 152.165.98.89:1195 776.1M 2ms'
   type: openvpn
-  server: 182.165.181.74
-  port: 1403
+  server: 152.165.98.89
+  port: 1195
   proto: tcp
   ca: "-----BEGIN CERTIFICATE-----\r\nMIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw\r\
     \nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\r\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4\r\
@@ -48,10 +48,34 @@ proxies:
   cipher: AES-256-GCM
   auth: SHA512
   tls: true
-- name: '[JP] 118.241.184.72:1306 352.3M 2ms'
+- name: '[JP] 118.240.49.38:1688 379.1M 2ms'
   type: openvpn
-  server: 118.241.184.72
-  port: 1306
+  server: 118.240.49.38
+  port: 1688
+  proto: tcp
+  ca: "-----BEGIN CERTIFICATE-----\r\nMIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw\r\
+    \nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\r\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4\r\
+    \nWhcNMzUwNjA0MTEwNDM4WjBPMQswCQYDVQQGEwJVUzEpMCcGA1UEChMgSW50ZXJu\r\nZXQgU2VjdXJpdHkgUmVzZWFyY2ggR3JvdXAxFTATBgNVBAMTDElTUkcgUm9vdCBY\r\
+    \nMTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAK3oJHP0FDfzm54rVygc\r\nh77ct984kIxuPOZXoHj3dcKi/vVqbvYATyjb3miGbESTtrFj/RQSa78f0uoxmyF+\r\
+    \n0TM8ukj13Xnfs7j/EvEhmkvBioZxaUpmZmyPfjxwv60pIgbz5MDmgK7iS4+3mX6U\r\nA5/TR5d8mUgjU+g4rk8Kb4Mu0UlXjIB0ttov0DiNewNwIRt18jA8+o+u3dpjq+sW\r\
+    \nT8KOEUt+zwvo/7V3LvSye0rgTBIlDHCNAymg4VMk7BPZ7hm/ELNKjD+Jo2FR3qyH\r\nB5T0Y3HsLuJvW5iB4YlcNHlsdu87kGJ55tukmi8mxdAQ4Q7e2RCOFvu396j3x+UC\r\
+    \nB5iPNgiV5+I3lg02dZ77DnKxHZu8A/lJBdiB3QW0KtZB6awBdpUKD9jf1b0SHzUv\r\nKBds0pjBqAlkd25HN7rOrFleaJ1/ctaJxQZBKT5ZPt0m9STJEadao0xAH0ahmbWn\r\
+    \nOlFuhjuefXKnEgV4We0+UXgVCwOPjdAvBbI+e0ocS3MFEvzG6uBQE3xDk3SzynTn\r\njh8BCNAw1FtxNrQHusEwMFxIt4I7mKZ9YIqioymCzLq9gwQbooMDQaHWBfEbwrbw\r\
+    \nqHyGO0aoSCqI3Haadr8faqU9GY/rOPNk3sgrDQoo//fb4hVC1CLQJ13hef4Y53CI\r\nrU7m2Ys6xt0nUW7/vGT1M0NPAgMBAAGjQjBAMA4GA1UdDwEB/wQEAwIBBjAPBgNV\r\
+    \nHRMBAf8EBTADAQH/MB0GA1UdDgQWBBR5tFnme7bl5AFzgAiIyBpY9umbbjANBgkq\r\nhkiG9w0BAQsFAAOCAgEAVR9YqbyyqFDQDLHYGmkgJykIrGF1XIpu+ILlaS/V9lZL\r\
+    \nubhzEFnTIZd+50xx+7LSYK05qAvqFyFWhfFQDlnrzuBZ6brJFe+GnY+EgPbk6ZGQ\r\n3BebYhtF8GaV0nxvwuo77x/Py9auJ/GpsMiu/X1+mvoiBOv/2X/qkSsisRcOj/KK\r\
+    \nNFtY2PwByVS5uCbMiogziUwthDyC3+6WVwW6LLv3xLfHTjuCvjHIInNzktHCgKQ5\r\nORAzI4JMPJ+GslWYHb4phowim57iaztXOoJwTdwJx4nLCgdNbOhdjsnvzqvHu7Ur\r\
+    \nTkXWStAmzOVyyghqpZXjFaH3pO3JLF+l+/+sKAIuvtd7u+Nxe5AW0wdeRlN8NwdC\r\njNPElpzVmbUq4JUagEiuTDkHzsxHpFKVK7q4+63SM1N95R1NbdWhscdCb+ZAJzVc\r\
+    \noyi3B43njTOQ5yOf+1CceWxG1bQVs5ZufpsMljq4Ui0/1lvh+wjChP4kqKOJ2qxq\r\n4RgqsahDYVvTH9w7jXbyLeiNdd8XM2w9U/t7y0Ff/9yi0GE44Za4rF2LN9d11TPA\r\
+    \nmRGunUHBcnWEvgJBQl9nJEiU0Zsnvgc/ubhPgXRR4Xq37Z0j4r7g1SgEEzwxA57d\r\nemyPxgcYxn/eR44/KJ4EBs+lVDR3veyJm+kXQ99b21/+jh5Xos1AnX5iItreGCc=\r\
+    \n-----END CERTIFICATE-----"
+  cipher: AES-256-GCM
+  auth: SHA512
+  tls: true
+- name: '[JP] 111.217.77.78:1357 858.3M 2ms'
+  type: openvpn
+  server: 111.217.77.78
+  port: 1357
   proto: tcp
   ca: "-----BEGIN CERTIFICATE-----\r\nMIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw\r\
     \nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\r\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4\r\
@@ -96,10 +120,10 @@ proxies:
   cipher: AES-256-GCM
   auth: SHA512
   tls: true
-- name: '[JP] 116.82.246.198:1551 908.9M 2ms'
+- name: '[JP] 118.241.169.191:1242 957.9M 2ms'
   type: openvpn
-  server: 116.82.246.198
-  port: 1551
+  server: 118.241.169.191
+  port: 1242
   proto: tcp
   ca: "-----BEGIN CERTIFICATE-----\r\nMIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw\r\
     \nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\r\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4\r\
@@ -120,10 +144,10 @@ proxies:
   cipher: AES-256-GCM
   auth: SHA512
   tls: true
-- name: '[JP] 219.104.137.60:31168 912.8M 2ms'
+- name: '[JP] 1.21.121.201:6170 152.9M 3ms'
   type: openvpn
-  server: 219.104.137.60
-  port: 31168
+  server: 1.21.121.201
+  port: 6170
   proto: tcp
   ca: "-----BEGIN CERTIFICATE-----\r\nMIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw\r\
     \nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\r\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4\r\
@@ -144,10 +168,10 @@ proxies:
   cipher: AES-256-GCM
   auth: SHA512
   tls: true
-- name: '[JP] 1.21.119.93:23461 840.9M 2ms'
+- name: '[JP] 118.156.174.68:1461 3709.5M 3ms'
   type: openvpn
-  server: 1.21.119.93
-  port: 23461
+  server: 118.156.174.68
+  port: 1461
   proto: tcp
   ca: "-----BEGIN CERTIFICATE-----\r\nMIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw\r\
     \nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\r\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4\r\
@@ -192,10 +216,10 @@ proxies:
   cipher: AES-256-GCM
   auth: SHA512
   tls: true
-- name: '[JP] 126.42.52.247:1528 452.8M 3ms'
+- name: '[JP] 106.179.176.147:1763 514.1M 3ms'
   type: openvpn
-  server: 126.42.52.247
-  port: 1528
+  server: 106.179.176.147
+  port: 1763
   proto: tcp
   ca: "-----BEGIN CERTIFICATE-----\r\nMIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw\r\
     \nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\r\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4\r\
@@ -216,10 +240,10 @@ proxies:
   cipher: AES-256-GCM
   auth: SHA512
   tls: true
-- name: '[JP] 110.66.191.52:1773 1542.4M 3ms'
+- name: '[JP] 220.146.82.218:1655 202.1M 3ms'
   type: openvpn
-  server: 110.66.191.52
-  port: 1773
+  server: 220.146.82.218
+  port: 1655
   proto: tcp
   ca: "-----BEGIN CERTIFICATE-----\r\nMIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw\r\
     \nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\r\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4\r\
@@ -240,10 +264,10 @@ proxies:
   cipher: AES-256-GCM
   auth: SHA512
   tls: true
-- name: '[JP] 218.221.199.155:1921 93.5M 3ms'
+- name: '[JP] 138.64.100.247:18648 235.4M 3ms'
   type: openvpn
-  server: 218.221.199.155
-  port: 1921
+  server: 138.64.100.247
+  port: 18648
   proto: tcp
   ca: "-----BEGIN CERTIFICATE-----\r\nMIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw\r\
     \nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\r\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4\r\
@@ -264,10 +288,10 @@ proxies:
   cipher: AES-256-GCM
   auth: SHA512
   tls: true
-- name: '[JP] 60.143.120.123:1632 528.0M 4ms'
+- name: '[JP] 111.238.189.171:1214 89.6M 4ms'
   type: openvpn
-  server: 60.143.120.123
-  port: 1632
+  server: 111.238.189.171
+  port: 1214
   proto: tcp
   ca: "-----BEGIN CERTIFICATE-----\r\nMIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw\r\
     \nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\r\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4\r\
@@ -288,10 +312,10 @@ proxies:
   cipher: AES-256-GCM
   auth: SHA512
   tls: true
-- name: '[JP] 128.53.174.194:1406 70.4M 4ms'
+- name: '[JP] 111.238.218.220:1999 804.2M 4ms'
   type: openvpn
-  server: 128.53.174.194
-  port: 1406
+  server: 111.238.218.220
+  port: 1999
   proto: tcp
   ca: "-----BEGIN CERTIFICATE-----\r\nMIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw\r\
     \nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\r\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4\r\
@@ -312,10 +336,10 @@ proxies:
   cipher: AES-256-GCM
   auth: SHA512
   tls: true
-- name: '[JP] 153.130.255.84:1922 500.7M 4ms'
+- name: '[JP] 61.86.52.188:1729 239.0M 4ms'
   type: openvpn
-  server: 153.130.255.84
-  port: 1922
+  server: 61.86.52.188
+  port: 1729
   proto: tcp
   ca: "-----BEGIN CERTIFICATE-----\r\nMIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw\r\
     \nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\r\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4\r\
@@ -336,10 +360,10 @@ proxies:
   cipher: AES-256-GCM
   auth: SHA512
   tls: true
-- name: '[JP] 126.78.72.160:1743 460.4M 4ms'
+- name: '[JP] 114.183.95.22:1526 203.2M 5ms'
   type: openvpn
-  server: 126.78.72.160
-  port: 1743
+  server: 114.183.95.22
+  port: 1526
   proto: tcp
   ca: "-----BEGIN CERTIFICATE-----\r\nMIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw\r\
     \nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\r\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4\r\
@@ -360,10 +384,10 @@ proxies:
   cipher: AES-256-GCM
   auth: SHA512
   tls: true
-- name: '[JP] 119.243.241.250:1656 96.6M 4ms'
+- name: '[JP] 60.73.221.185:1542 171.4M 5ms'
   type: openvpn
-  server: 119.243.241.250
-  port: 1656
+  server: 60.73.221.185
+  port: 1542
   proto: tcp
   ca: "-----BEGIN CERTIFICATE-----\r\nMIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw\r\
     \nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\r\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4\r\
@@ -384,10 +408,10 @@ proxies:
   cipher: AES-256-GCM
   auth: SHA512
   tls: true
-- name: '[JP] 133.32.178.219:2017 404.5M 4ms'
+- name: '[JP] 101.2.152.223:1557 97.1M 6ms'
   type: openvpn
-  server: 133.32.178.219
-  port: 2017
+  server: 101.2.152.223
+  port: 1557
   proto: tcp
   ca: "-----BEGIN CERTIFICATE-----\r\nMIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw\r\
     \nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\r\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4\r\
@@ -408,10 +432,10 @@ proxies:
   cipher: AES-256-GCM
   auth: SHA512
   tls: true
-- name: '[JP] 114.183.136.251:1966 96.2M 5ms'
+- name: '[US] 47.144.229.47:1964 136.3M 7ms'
   type: openvpn
-  server: 114.183.136.251
-  port: 1966
+  server: 47.144.229.47
+  port: 1964
   proto: tcp
   ca: "-----BEGIN CERTIFICATE-----\r\nMIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw\r\
     \nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\r\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4\r\
@@ -432,34 +456,10 @@ proxies:
   cipher: AES-256-GCM
   auth: SHA512
   tls: true
-- name: '[JP] 160.86.25.181:1195 963.1M 6ms'
+- name: '[JP] 219.100.37.192:443 154.4M 8ms'
   type: openvpn
-  server: 160.86.25.181
-  port: 1195
-  proto: tcp
-  ca: "-----BEGIN CERTIFICATE-----\r\n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\r\
-    \n-----END CERTIFICATE-----"
-  cipher: AES-256-GCM
-  auth: SHA512
-  tls: true
-- name: '[JP] 182.165.172.247:1684 439.2M 6ms'
-  type: openvpn
-  server: 182.165.172.247
-  port: 1684
+  server: 219.100.37.192
+  port: 443
   proto: tcp
   ca: "-----BEGIN CERTIFICATE-----\r\nMIIFazCCA1OgAwIBAgIRAIIQz7DSQONZRGPgu2OCiwAwDQYJKoZIhvcNAQELBQAw\r\
     \nTzELMAkGA1UEBhMCVVMxKTAnBgNVBAoTIEludGVybmV0IFNlY3VyaXR5IFJlc2Vh\r\ncmNoIEdyb3VwMRUwEwYDVQQDEwxJU1JHIFJvb3QgWDEwHhcNMTUwNjA0MTEwNDM4\r\
@@ -484,26 +484,26 @@ proxy-groups:
 - name: VPNGate
   type: url-test
   proxies:
-  - '[US] 217.12.194.164:40441 44.9M 1ms'
-  - '[JP] 182.165.181.74:1403 713.0M 1ms'
-  - '[JP] 118.241.184.72:1306 352.3M 2ms'
+  - '[JP] 131.147.158.37:1831 934.2M 1ms'
+  - '[JP] 152.165.98.89:1195 776.1M 2ms'
+  - '[JP] 118.240.49.38:1688 379.1M 2ms'
+  - '[JP] 111.217.77.78:1357 858.3M 2ms'
   - '[JP] 39.110.155.139:1977 965.1M 2ms'
-  - '[JP] 116.82.246.198:1551 908.9M 2ms'
-  - '[JP] 219.104.137.60:31168 912.8M 2ms'
-  - '[JP] 1.21.119.93:23461 840.9M 2ms'
+  - '[JP] 118.241.169.191:1242 957.9M 2ms'
+  - '[JP] 1.21.121.201:6170 152.9M 3ms'
+  - '[JP] 118.156.174.68:1461 3709.5M 3ms'
   - '[DE] 185.249.198.156:443 204.2M 3ms'
-  - '[JP] 126.42.52.247:1528 452.8M 3ms'
-  - '[JP] 110.66.191.52:1773 1542.4M 3ms'
-  - '[JP] 218.221.199.155:1921 93.5M 3ms'
-  - '[JP] 60.143.120.123:1632 528.0M 4ms'
-  - '[JP] 128.53.174.194:1406 70.4M 4ms'
-  - '[JP] 153.130.255.84:1922 500.7M 4ms'
-  - '[JP] 126.78.72.160:1743 460.4M 4ms'
-  - '[JP] 119.243.241.250:1656 96.6M 4ms'
-  - '[JP] 133.32.178.219:2017 404.5M 4ms'
-  - '[JP] 114.183.136.251:1966 96.2M 5ms'
-  - '[JP] 160.86.25.181:1195 963.1M 6ms'
-  - '[JP] 182.165.172.247:1684 439.2M 6ms'
+  - '[JP] 106.179.176.147:1763 514.1M 3ms'
+  - '[JP] 220.146.82.218:1655 202.1M 3ms'
+  - '[JP] 138.64.100.247:18648 235.4M 3ms'
+  - '[JP] 111.238.189.171:1214 89.6M 4ms'
+  - '[JP] 111.238.218.220:1999 804.2M 4ms'
+  - '[JP] 61.86.52.188:1729 239.0M 4ms'
+  - '[JP] 114.183.95.22:1526 203.2M 5ms'
+  - '[JP] 60.73.221.185:1542 171.4M 5ms'
+  - '[JP] 101.2.152.223:1557 97.1M 6ms'
+  - '[US] 47.144.229.47:1964 136.3M 7ms'
+  - '[JP] 219.100.37.192:443 154.4M 8ms'
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
