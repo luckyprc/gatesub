@@ -99,3 +99,25 @@ def download_sub(url):
         "Accept": "*/*",
         "Referer": "https://t.me/",
     }, timeout=30)
+    r.raise_for_status()
+    content = r.text
+    log(f"Downloaded {len(content)} bytes")
+    if len(content) < 50:
+        raise ValueError("Content too short")
+    return content
+
+def main():
+    log("=== Start Fetch ===")
+    sub_url = fetch_telegram_web()
+    if not sub_url:
+        sub_url = fetch_bot_api()
+    if not sub_url:
+        log("FAILED: No subscription URL found")
+        sys.exit(1)
+    content = download_sub(sub_url)
+    with open(KV_FILE, "w", encoding="utf-8") as f:
+        f.write(content)
+    log(f"SUCCESS: Saved to {KV_FILE}")
+
+if __name__ == "__main__":
+    main()
