@@ -1,0 +1,39 @@
+name: Fetch Telegram Subscription
+
+on:
+  schedule:
+    - cron: '0 3 * * *'   # 每天北京时间 11:00
+  workflow_dispatch:      # 支持手动触发
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch subscription
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        run: python fetch_sub.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sub.txt
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update subscription $(date -u +%Y-%m-%d)"
+            git push
+          fi
