@@ -4,12 +4,27 @@ import re
 import sys
 import requests
 
-CHANNEL = "changfengchannel"  # ← 改这里
+CHANNEL = "changfengchannel"
 KV_FILE = "sub.txt"
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
 def log(msg):
     print(f"[{__import__('datetime').datetime.now().isoformat()}] {msg}")
+
+def extract_urls(text):
+    """从文本中提取干净的 URL 列表"""
+    urls = []
+    # 按行分割
+    for line in text.split('\n'):
+        line = line.strip()
+        # 严格匹配 URL，排除中文标点
+        found = re.findall(r'https?://[a-zA-Z0-9\-\._~:/?#[\]@!$&\'()*+,;=%]+', line)
+        for u in found:
+            # 清理末尾的中文标点
+            u = re.sub(r'[：。，！？、；""''（）【】]+$', '', u)
+            if u.startswith('http'):
+                urls.append(u)
+    return urls
 
 def fetch_telegram_web():
     url = f"https://t.me/s/{CHANNEL}"
@@ -27,10 +42,14 @@ def fetch_telegram_web():
             msgs = re.findall(r'<div class="tgme_widget_message_text[^"]*"[^>]*>([\s\S]*?)</div>', r.text)
             log(f"Extracted {len(msgs)} messages from web")
             for m in msgs:
-                text = re.sub(r'<[^>]+>', '', m).replace('&nbsp;', ' ').strip()
-                urls = re.findall(r'https?://[^\s<>"]+', text)
+                # 先保留换行，再去标签
+                text = m.replace('<br>', '\n').replace('<br/>', '\n').replace('<br />', '\n')
+                text = re.sub(r'<[^>]+>', '', text).replace('&nbsp;', ' ').strip()
+                
+                urls = extract_urls(text)
                 for u in urls:
                     if "nodebuf.com" in u and "/download" in u:
+                        log(f"Found URL: {u}")
                         return u
         else:
             log("t.me/s/ returned contact/restricted page, skipping")
@@ -61,7 +80,7 @@ def fetch_bot_api():
         text = pinned.get("text") or pinned.get("caption") or ""
         log(f"Pinned message length: {len(text)}")
         
-        urls = re.findall(r'https?://[^\s<>"]+', text)
+        urls = extract_urls(text)
         log(f"URLs in pinned: {urls}")
         
         for u in urls:
@@ -69,7 +88,6 @@ def fetch_bot_api():
                 return u
     else:
         log(f"getChat failed: {chat}")
-        log("Trying getUpdates...")
         
         updates = requests.get(
             f"https://api.telegram.org/bot{BOT_TOKEN}/getUpdates",
@@ -83,7 +101,7 @@ def fetch_bot_api():
                 msg = upd.get("channel_post")
                 if msg and msg.get("chat", {}).get("username") == CHANNEL:
                     text = msg.get("text") or msg.get("caption") or ""
-                    for u in re.findall(r'https?://[^\s<>"]+', text):
+                    for u in extract_urls(text):
                         if "nodebuf.com" in u and "/download" in u:
                             log(f"Found URL in update: {u}")
                             return u
